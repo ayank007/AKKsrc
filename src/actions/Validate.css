@@ -1,0 +1,10 @@
+.validation-bg{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.validation-bg.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.validation-bg.active .validation{
+    transform: translateY(0);
+}
