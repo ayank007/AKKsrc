@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav></nav>
+    <section id="left">
+        <div class="leftnav">
+            <span><i class="fa fa-home" aria-hidden="true"></i></span>
+            <span><i class="fa fa-bell" aria-hidden="true"></i></span>
+        </div>
+        <span class="text-white">Most Destinated Location (numbers)</span>
+        <div class="locchart">
+            <div id="piechart2"></div>
+        </div>
+        <div class="d-flex">
+            <span class="leftboxbg">
+                <p>Highest :</p>
+                <div class="leftbox">Shimla 30%</div>
+            </span>
+            <span class="leftboxbg">
+                <p>Lowest : </p>
+                <div class="leftbox low">Chennai 0.04%</div>
+            </span>
+        </div>
+        <span class="text-white">Tourist Percentage</span>
+        <div class="locchart">
+            <div id="piechart1"></div>
+        </div>
+    </section>
+    <div class="openleft"><i class="fa fa-bars" aria-hidden="true" onclick="openleft();"></i></div>
+    <section id="main">
+        <div class="heading">
+            DASHBOARD
+        </div>
+        <div class="content">
+            <div class="ctop row">
+                <div class="ctop1 col-lg-8">
+                    <h6>Highest Earning Tour : </h6>
+                    <h3>Beautiful Journey from Kolkata to Darjeeling</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Libero voluptatem beatae temporibus laborum, 
+                        voluptates id debitis cum quae laudantium nam?
+                    </p>
+                    <div class="btns mt-3">
+                        <span>Profit : 12,000$</span>
+                    </div>
+                </div>
+                <div class="ctop2 col-lg-4">
+                    <div class="imgbg">
+                        <img src="./darjeeling.jpg" alt="">
+                    </div>
+                </div>
+            </div><br>
+            <div class="cmid">
+                <div class="cmid1">
+                    <div class="cmidcon">
+                        <span><p>Total Tour :</p>12</span>
+                        <img src="./map.svg" alt="">
+                    </div>
+                    <div class="cmidcon">
+                        <span><p>Total Earned :</p>65348610$ +</span>
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                    </div>
+                </div><br>
+                <div class="cmid1 cmid2">
+                    <div class="cmidcon">
+                        <div id="top_x_div"></div>
+                    </div>
+                </div><br>
+                <div class="cmid1 cmid2 cmid3">
+                    <div class="cmidcon">
+                        <div id="series_chart_div"></div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="cbtm">
+                <h4 class="text-white">Cashbook</h4>
+                <div class="btns">
+                    <input type="text" id="search" placeholder="Serch Tour">
+                    <button type="button" onclick="newestTable();">Sort By Newest</button>
+                    <button type="button" onclick="oldestTable();">Sort By Oldest</button>
+                </div>
+                <div class="cbtm1">
+                    <table class="mt-3" id="customers">
+                    <tr>
+                        <th>Tour Id</th>
+                        <th>Tour Name</th>
+                        <th>Starting Location</th>
+                        <th>Ending Location</th>
+                        <th>Book By</th>
+                        <th>Book Date</th>
+                        <th>Total People</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>aaaaaaaa</td>
+                        <td>A beautiful Journey from Kolkata to Darjeeling</td>
+                        <td>Kolkata</td>
+                        <td>Darjeeling</td>
+                        <td>25th December</td>
+                        <td>23/12/2020</td>
+                        <td>6</td>
+                        <td>160.45$</td>
+                    </tr>
+                    <tr>
+                        <td>bbbbbbbbbbbb</td>
+                        <td>A beautiful Journey from Kolkata to Darjeeling</td>
+                        <td>Kolkata</td>
+                        <td>Darjeeling</td>
+                        <td>25th December</td>
+                        <td>24/12/2020</td>
+                        <td>6</td>
+                        <td>160.45$</td>
+                    </tr>
+                    <tr>
+                        <td>ccccccccccc</td>
+                        <td>A beautiful Journey from Kolkata to Darjeeling</td>
+                        <td>Kolkata</td>
+                        <td>Darjeeling</td>
+                        <td>25th December</td>
+                        <td>25/12/2020</td>
+                        <td>6</td>
+                        <td>160.45$</td>
+                    </tr>
+                    </table>
+                </div>
+                <div class="noMatchFound">No Match Found</div>                 
+            </div><br><br>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" 
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+    crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="index.js"></script>
+</html>
