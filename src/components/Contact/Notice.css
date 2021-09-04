@@ -1,0 +1,19 @@
+.noticeBoard{
+    height: 200px;
+    background: url(../../Images/crossbg.jpg);
+    background-position: center center;
+}
+.selectTag p{
+    font-weight: 600;
+}
+.selectTag:hover > .absolute{
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+.selectTag > .absolute > div{
+    padding: 5px 20px;
+}
+.selectTag > .absolute > div:hover{
+    background-color: aliceblue;
+}

@@ -1,0 +1,15 @@
+#Home{
+    height: 500px;
+}
+.homeLeft{
+    max-width: calc(100% - 384px);
+}
+.homeRight img{
+    height: 100%;
+    min-width: 100%;
+    width: auto;
+}
+.homeRight a{
+    height: 100%;
+    width: 100%;
+}
